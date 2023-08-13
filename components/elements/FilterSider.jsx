@@ -5,7 +5,6 @@ const List =["فست فود", "ایرانی","کباب" ,"سالاد","بین ا
 function FilterSider({ cats }) {
   const router = useRouter()
   const searchParam = useSearchParams()
-  const getSearch = searchParam.get("cat")
   const handler = (id)=>{
     router.push(`/service/restaurants?cat=${id}`)
     
@@ -43,34 +42,6 @@ function FilterSider({ cats }) {
             </div>
           ))}
         </div>
-        {/* <div className="w-full h-1/4 flex items-center cursor-pointer justify-between p-[5px]">
-          <div className=" w-[95px] h-8 flex items-center ">
-            <img src="tiger.jpg" alt="tiger" className=" w-8 h-8 object-cover rounded-[50%] " />
-            <p className=" text-sm font-vrg mr-3 text-zinc-900 ">ایرانی</p>
-          </div>
-          <div><img src="/images/arrow.svg" alt="arrow" className="-rotate-90" /></div>
-        </div>
-        <div className="w-full h-1/4 flex items-center cursor-pointer justify-between p-[5px]">
-          <div className=" w-[95px] h-8 flex items-center ">
-            <img src="tiger.jpg" alt="tiger" className=" w-8 h-8 object-cover rounded-[50%]" />
-            <p className=" text-sm font-vrg mr-3 text-zinc-900">کباب</p>
-          </div>
-          <div><img src="/images/arrow.svg" alt="arrow" className="-rotate-90" /></div>
-        </div>
-        <div className="w-full h-1/4 flex items-center cursor-pointer justify-between p-[5px]">
-          <div className=" w-[95px] h-8 flex items-center ">
-            <img src="tiger.jpg" alt="tiger" className=" w-8 h-8 object-cover rounded-[50%]" />
-            <p className=" text-sm font-vrg mr-3 text-zinc-900">سالاد</p>
-          </div>
-          <div><img src="/images/arrow.svg" alt="arrow" className="-rotate-90" /></div>
-        </div>
-        <div className="w-full h-1/4 flex items-center cursor-pointer justify-between p-[5px]">
-          <div className=" w-[95px] h-8 flex items-center ">
-            <img src="tiger.jpg" alt="tiger" className=" w-8 h-8 object-cover rounded-[50%]" />
-            <p className=" text-sm font-vrg mr-3 text-zinc-900">دریایی</p>
-          </div>
-          <div><img src="/images/arrow.svg" alt="arrow" className="-rotate-90" /></div>
-        </div> */}
       </div>
     </div>
   );
