@@ -42,7 +42,7 @@ export default async function Header() {
           </div>
         </div>
 
-        <SearchDiv cats={cats} restaurants={restaurants} foods={foods} />
+        {/* <SearchDiv cats={cats} restaurants={restaurants} foods={foods} /> */}
 
         <div className=" flex items-center z-999 md:gap-x-spacing-3">
           <Person/>
