@@ -63,7 +63,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     const targetClass = e.target.className;
     if (targetClass.includes("CLOSE")) {
       setModal(false);
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = "auto";
     }
 
   },[])
