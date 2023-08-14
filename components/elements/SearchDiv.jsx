@@ -18,15 +18,6 @@ export default function SearchDiv({ foods, cats, restaurants }) {
   let restaurantName;
   let text='';
 
-
-  
-
-  
-
-
-
-
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       setPath(window.location.pathname);
@@ -63,7 +54,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     const targetClass = e.target.className;
     if (targetClass.includes("CLOSE")) {
       setModal(false);
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "scroll";
     }
 
   },[])

@@ -9,7 +9,6 @@
 
 
 
-
 /* .btn::before{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[0px]
   transition
@@ -82,10 +81,6 @@
 .input-toggle {
   display: none;
   
-}
-
-html{
-  overflow-x: hidden;
 }
 
 body {
